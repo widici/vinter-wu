@@ -1,25 +1,25 @@
 :root {
-    --base-color: #eff1f5;
+    --base-color: #292c3c;
     --mantle-color: #e6e9ef;
     --accent-color: #ff5733;
 }
 
 body {
     margin: 0;
-    background-color: black;
+    background-color: var(--base-color);
 }
 
 div#wrapper {
     display: grid;
-    grid-template-columns: 1fr 3fr 1fr;
-    grid-template-rows: 15vh 75vh 10vh;
+    grid-template-columns: 1fr 4fr 1fr;
+    grid-template-rows: 15vh auto 10vh;
     grid-template-areas:
         "hd hd hd"
         "la sc ra"
         "ft ft ft";
 }
 
-div#wrapper header {
+header {
     grid-area: hd;
     display: flex;
     justify-content: space-between;
@@ -27,36 +27,59 @@ div#wrapper header {
     background-color: var(--mantle-color)
 }
 
-div#wrapper header img {
+header img {
     height: 100%
 }
 
-div#wrapper header nav {
+header nav {
     display: flex;
     width: 60%;
     justify-content: space-around;
 }
 
-div#wrapper header nav a {
+header nav a {
     font-size: 300%;
 }
 
-div#wrapper aside#la {
+aside#la {
     grid-area: la;
     background-color: yellow
 }
 
-div#wrapper section {
+section {
     grid-area: sc;
-    background-color: red;
+    margin: 1vw;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
 }
 
-div#wrapper aside#ra {
+article {
+    display: flex;
+    margin: 1vw;
+    flex-direction: column;
+    align-items: center;
+    width: 30%;
+    background-color: var(--mantle-color);
+}
+
+article div#dish-img {
+    width: 75%;
+    height: 30vh;
+}
+
+article div#dish-img img[src*="img/dish-"] {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+aside#ra {
     grid-area: ra;
     background-color: aqua;
 }
 
-div#wrapper footer {
+footer {
     grid-area: ft;
     background-color: blue;
 }
