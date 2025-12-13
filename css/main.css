@@ -45,6 +45,13 @@ site-header nav a.active {
     text-decoration: underline;
 }
 
+site-footer {
+    grid-area: ft;
+    display: flex;
+    justify-content: left;
+    background-color: var(--crust-color);
+}
+
 site-footer div {
     width: 35%;
     height: 100%;
@@ -55,7 +62,7 @@ site-footer div {
 }
 
 site-footer div img {
-    height: 90%;
+    height: 80%;
 }
 
 a {
