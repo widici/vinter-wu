@@ -1,0 +1,79 @@
+:root {
+    --base-color: #dce0e8;
+    --mantle-color: #e6e9ef;
+    --crust-color: #eff1f5;
+    --accent-color: #ff5733;
+    /*#4c4f69*/
+    --text-color: black;
+    --border-radius: 0.25vw
+}
+
+body {
+    margin: 0;
+    background-color: var(--base-color);
+}
+
+div#wrapper {
+    display: grid;
+    grid-template-columns: 100vw;
+    grid-template-rows: 15vh auto 10vh;
+    grid-template-areas:
+        "hd"
+        "mn"
+        "ft";
+}
+
+site-header {
+    grid-area: hd;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: var(--crust-color)
+}
+
+site-header img {
+    height: 90%
+}
+
+site-header nav {
+    display: flex;
+    justify-content: space-around;
+    width: 60%;
+}
+
+site-header nav a.active {
+    text-decoration: underline;
+}
+
+site-footer div {
+    width: 35%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+site-footer div img {
+    height: 90%;
+}
+
+a {
+    text-decoration: none;
+    color: var(--accent-color);
+    font-size: 400%;
+}
+
+p {
+    font-size: larger;
+}
+
+h3 {
+    font-size: x-large;
+}
+
+p,
+h3,
+h2 {
+    color: var(--text-color);
+}
