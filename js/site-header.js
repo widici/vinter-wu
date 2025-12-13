@@ -1,6 +1,7 @@
 class SiteHeader extends HTMLElement {
     constructor() {
         super();
+
         this.innerHTML = `
             <img src="img/icon-figure.png" alt="Figure icon">
             <nav>
@@ -10,6 +11,16 @@ class SiteHeader extends HTMLElement {
             </nav>
             <img src="img/icon-hand.png" alt="Hand icon">
         `;
+
+        const links = this.querySelectorAll("nav a");
+        const path = window.location.pathname.split("/").pop();
+
+        links.forEach(link => {
+            const href = link.getAttribute("href");
+            if (href === path || (href === "index.html" && path === "")) {
+                link.classList.add("active");
+            }
+        });
     }
 }
 

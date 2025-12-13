@@ -1,6 +1,7 @@
 class SiteFooter extends HTMLElement {
     constructor() {
         super();
+
         this.innerHTML = `
             <div>
                 <img src="img/icon-figure.png" alt="Figure icon">

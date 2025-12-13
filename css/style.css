@@ -41,6 +41,10 @@ site-header nav {
     width: 60%;
 }
 
+site-header nav a.active {
+    text-decoration: underline;
+}
+
 section#dishes {
     grid-area: sc;
     display: flex;
