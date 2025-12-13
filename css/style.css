@@ -23,7 +23,7 @@ div#wrapper {
         "ft ft ft";
 }
 
-header {
+site-header {
     grid-area: hd;
     display: flex;
     justify-content: space-around;
@@ -31,11 +31,11 @@ header {
     background-color: var(--crust-color)
 }
 
-header img {
+site-header img {
     height: 90%
 }
 
-header nav {
+site-header nav {
     display: flex;
     justify-content: space-around;
     width: 60%;
@@ -106,19 +106,19 @@ aside div.ad-title {
 }
 
 aside div.ad-img {
-    height: 95%;
+    height: 100%;
     background-image: url("../img/ad-podme.png");
     background-size: contain;
 }
 
-footer {
+site-footer {
     grid-area: ft;
     display: flex;
     justify-content: left;
     background-color: var(--crust-color);
 }
 
-footer div {
+site-footer div {
     width: 35%;
     height: 100%;
     display: flex;
@@ -127,7 +127,7 @@ footer div {
     align-items: center;
 }
 
-footer div img {
+site-footer div img {
     height: 90%;
 }
 
