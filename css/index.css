@@ -12,7 +12,7 @@ section#dishes {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    margin: 1vw;
+    margin: var(--default-margin);
 }
 
 section#dishes article {
@@ -20,11 +20,11 @@ section#dishes article {
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    margin: 1vw;
-    padding: 1vw;
+    margin: var(--default-margin);
+    padding: var(--default-margin);
     width: 25%;
     height: 40vh;
-    border-radius: var(--border-radius);
+    border-radius: var(--default-radius);
     background-color: var(--mantle-color);
 }
 
@@ -46,7 +46,7 @@ section.dish-stats {
     align-items: center;
     width: 100%;
     height: 20%;
-    border-radius: var(--border-radius);
+    border-radius: var(--default-radius);
     background-color: var(--accent-color);
 }
 

@@ -1,0 +1,34 @@
+main {
+    grid-area: mn;
+    display: flex;
+    flex-direction: column;
+}
+
+section#employees {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: var(--default-margin);
+}
+
+section#employees article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    height: 55vh;
+    width: 25%;
+    border-radius: var(--default-radius);
+    background-color: var(--mantle-color);
+}
+
+section#employees article img {
+    height: 100%;
+    border-radius: var(--default-radius);
+}
+
+div.employee-contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}

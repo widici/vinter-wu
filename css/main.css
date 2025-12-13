@@ -5,7 +5,8 @@
     --accent-color: #ff5733;
     /*#4c4f69*/
     --text-color: black;
-    --border-radius: 0.25vw
+    --default-radius: 0.25vw;
+    --default-margin: 1vw;
 }
 
 body {
@@ -53,7 +54,7 @@ site-footer {
 }
 
 site-footer div {
-    width: 35%;
+    width: 50%;
     height: 100%;
     display: flex;
     flex-direction: row;
@@ -68,14 +69,17 @@ site-footer div img {
 a {
     text-decoration: none;
     color: var(--accent-color);
+}
+
+a.page-link {
     font-size: 400%;
 }
 
-p {
-    font-size: larger;
+h3 {
+    font-size: xx-large;
 }
 
-h3 {
+p {
     font-size: x-large;
 }
 
