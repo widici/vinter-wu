@@ -1,0 +1,46 @@
+main {
+    grid-area: mn;
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+    grid-template-areas:
+        "sc as";
+    margin: var(--default-margin);
+}
+
+section#description {
+    grid-area: sc;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-around; */
+    padding: var(--default-margin);
+}
+
+section#description article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+aside#figs {
+    grid-area: as;
+    display: flex;
+    flex-direction: column;
+    gap: var(--default-margin);
+}
+
+aside#figs img {
+    width: 100%;
+}
+
+aside#figs figure {
+    display: flex;
+    flex-direction: column;
+    border: var(--default-margin) solid var(--mantle-color);
+    border-radius: var(--default-radius);
+    background-color: var(--mantle-color);
+}
+
+figcaption {
+    text-align: center;
+    margin: var(--default-margin);
+}

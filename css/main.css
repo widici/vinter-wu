@@ -66,6 +66,10 @@ site-footer div img {
     height: 80%;
 }
 
+img {
+    border-radius: var(--default-radius);
+}
+
 a {
     text-decoration: none;
     color: var(--accent-color);
@@ -80,12 +84,18 @@ h3 {
     font-size: xx-large;
 }
 
-p {
+p,
+figcaption {
     font-size: x-large;
 }
 
 p,
 h3,
-h2 {
+h2,
+figcaption {
     color: var(--text-color);
+}
+
+h2 {
+    margin: 0;
 }

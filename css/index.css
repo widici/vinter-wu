@@ -78,7 +78,7 @@ aside div.ad-img {
     background-size: contain;
 }
 
-aside,
-h2 {
-    font-size: 150%;
+aside h2 {
+    font-size: 200%;
+    margin: var(--default-margin);
 }
