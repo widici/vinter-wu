@@ -3,10 +3,22 @@
     --mantle-color: #e6e9ef;
     --crust-color: #eff1f5;
     --accent-color: #ff5733;
-    /*#4c4f69*/
     --text-color: black;
     --default-radius: 0.25vw;
     --default-margin: 1vw;
+}
+
+html,
+body {
+    overflow: scroll;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+
+html::-webkit-scrollbar,
+body::-webkit-scrollbar {
+    width: 0px;
+    height: 0px;
 }
 
 body {
