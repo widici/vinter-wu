@@ -3,11 +3,11 @@ class AdUnit extends HTMLElement {
         super();
 
         const AD_PATHS = [
-            "../img/ads/crib-black.png",
-            "../img/ads/crib-pink.png",
-            "../img/ads/rust-lang.png",
-            "../img/ads/c-lang.png",
-            "../img/ads/crafting-interpreters.png",
+            "../img/ads/crib-black.webp",
+            "../img/ads/crib-pink.webp",
+            "../img/ads/rust-lang.webp",
+            "../img/ads/c-lang.webp",
+            "../img/ads/crafting-interpreters.webp",
         ];
 
         this.innerHTML = `

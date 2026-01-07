@@ -3,13 +3,13 @@ class SiteHeader extends HTMLElement {
         super();
 
         this.innerHTML = `
-            <img src="img/icons/figure.png" alt="Figure icon">
+            <img src="img/icons/figure.webp" alt="Figure icon">
             <nav>
                 <a class="page-link" href="about.html">About</a>
                 <a class="page-link" href="index.html">Recipes</a>
                 <a class="page-link" href="contact.html">Contact</a>
             </nav>
-            <img src="img/icons/hand.png" alt="Hand icon">
+            <img src="img/icons/hand.webp" alt="Hand icon">
         `;
 
         const links = this.querySelectorAll("nav a");

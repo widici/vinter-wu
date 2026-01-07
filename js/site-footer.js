@@ -4,7 +4,7 @@ class SiteFooter extends HTMLElement {
 
         this.innerHTML = `
             <div>
-                <img src="img/icons/figure.png" alt="Figure icon">
+                <img src="img/icons/figure.webp" alt="Figure icon">
                 <p>Built with ☕ and 🦆.</p>
                 <p>🄯 2025 SmartRecipes, Gräsanden Göran.</p>
             </div>
