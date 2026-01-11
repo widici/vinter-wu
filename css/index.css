@@ -15,25 +15,20 @@ section#dishes {
     margin: var(--default-margin);
 }
 
-section#dishes a {
-    width: 25%;
-    height: 40vh;
-    margin: var(--default-margin);
-}
-
-section#dishes a article {
+section#dishes article {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
+    margin: var(--default-margin);
     padding: var(--default-margin);
-    width: 100%;
-    height: 100%;
+    width: 25%;
+    height: 40vh;
     border-radius: var(--default-radius);
     background-color: var(--mantle-color);
 }
 
-section#dishes a article h3 {
+section#dishes article h3 {
     text-align: center;
     margin: var(--default-margin);
 }
